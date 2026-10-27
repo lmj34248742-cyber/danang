@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>다낭팸 숙소 공지</title>
+<style>
+:root{--sea:#0E6E7E;--sea-d:#0A4F5B;--sand:#F6EFE3;--ink:#1B2A2E;--mute:#5E6E72;--line:#E3DACB;--card:#FFFFFF;--hl:#FFE7A8;--hl-b:#E8B93C;--pick:#E6F3F3}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",sans-serif;background:var(--sand);color:var(--ink);line-height:1.7;font-size:18px;word-break:keep-all}
+.wrap{max-width:560px;margin:0 auto;padding:24px 18px 48px}
+h1{font-size:30px;line-height:1.3;color:var(--sea-d);margin-bottom:8px}
+.lead{font-size:17px;color:var(--mute);margin-bottom:22px}
+.tabs{display:flex;gap:8px;position:sticky;top:0;background:var(--sand);padding:10px 0;z-index:5}
+.tab{flex:1;font:inherit;font-size:17px;font-weight:600;padding:13px 4px;border:2px solid var(--line);background:var(--card);color:var(--mute);border-radius:12px;cursor:pointer}
+.tab[aria-selected="true"]{background:var(--sea);border-color:var(--sea);color:#fff}
+.tab:focus-visible{outline:3px solid var(--hl-b);outline-offset:2px}
+.panel{display:none;margin-top:14px}
+.panel.on{display:block}
+h2{font-size:24px;margin-bottom:14px;line-height:1.4}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;margin-bottom:12px}
+.card b.t{display:block;font-size:20px;color:var(--sea-d);margin-bottom:4px}
+.card p{font-size:17px}
+.note{background:var(--hl);border:2px solid var(--hl-b);border-radius:14px;padding:16px 18px;font-weight:700;font-size:19px;margin:16px 0}
+.plain{font-size:17px;margin:14px 0}
+.mine{background:var(--pick);border:2px solid var(--sea);border-radius:14px;padding:16px 18px;margin-top:16px}
+.mine small{display:block;font-size:15px;font-weight:700;color:var(--sea);margin-bottom:4px}
+.mine p{font-size:19px;font-weight:600}
+.opts{list-style:none}
+.opts li{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin-bottom:10px;display:flex;gap:14px;align-items:flex-start}
+.opts .n{flex:0 0 34px;height:34px;border-radius:50%;background:var(--sea);color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center;font-size:17px}
+.opts p{font-size:18px}
+.time{display:inline-block;background:var(--pick);color:var(--sea-d);font-weight:700;border-radius:8px;padding:2px 9px;font-size:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>다낭팸 숙소 정하기</h1>
+  <p class="lead">숙소 후보를 찾아보기에 앞서 몇 가지 정해야 할 게 있음</p>
+
+  <div class="tabs" role="tablist">
+    <button class="tab" role="tab" aria-selected="true" data-t="p1">숙소 위치</button>
+    <button class="tab" role="tab" aria-selected="false" data-t="p2">숙소 유형</button>
+    <button class="tab" role="tab" aria-selected="false" data-t="p3">방 타입</button>
+  </div>
+
+  <section class="panel on" id="p1" role="tabpanel">
+    <h2>숙소 위치</h2>
+    <p class="plain">다낭하면 가장 많이 가는 곳이 아래 세 곳임</p>
+    <div class="card"><b class="t">(1) 한강 주변과 미케비치</b><p>콩카페, 한시장, 핑크성당, 용다리, 선짜야시장, 바다 등 웬만한 핫플이 다 이곳에 몰려있음</p></div>
+    <div class="card"><b class="t">(2) 바나힐</b><p>유명한 손바닥 모양 다리?가 이곳에 있음</p></div>
+    <div class="card"><b class="t">(3) 호이안</b><p>현지 느낌이 가장 많이 나는 곳으로 소원배를 타고 등불을 띄울 수 있는 투본강과 스벅, 올드타운 등이 있음</p></div>
+    <p class="plain">물론 세 곳을 다 갈 수 있다면 좋겠지만, 3박 4일로 다낭을 가는 여행객들은 대부분 (1)구역을 필수로 잡고, (2) 또는 (3)구역 중 한 가지를 택해서 (1)+(2)나 (1)+(3) 코스로 여행을 다님</p>
+    <p class="plain"><span class="time">(1) → (2) 47분</span> <span class="time">(1) → (3) 47분</span><br>시간이 생각보다 많이 소요되기 때문</p>
+    <div class="note">★ 그래서 어떤 코스로 여행하고 싶은지 골라야 함! ★</div>
+    <div class="mine"><small>이민지 의견</small><p>호이안도 유명한 걸로 알아서 (1)+(3) 원합니다!</p></div>
+  </section>
+
+  <section class="panel" id="p2" role="tabpanel">
+    <h2>숙소 유형</h2>
+    <div class="card"><p>수영장 딸린 호텔을 원한다!<br>야경이 근사한 고층 호텔을 원한다 등등</p></div>
+    <div class="note">★ 원하는 숙소를 자유롭게 얘기해 주세요 ★</div>
+    <div class="mine"><small>이민지 의견</small><p>수영장이 딸린, 룸 컨디션이 좋은 숙소를 희망합니다!</p></div>
+  </section>
+
+  <section class="panel" id="p3" role="tabpanel">
+    <h2>방 타입</h2>
+    <ul class="opts">
+      <li><span class="n">1</span><p>침대가 2개 있는 방 <b>2개</b> 잡기</p></li>
+      <li><span class="n">2</span><p>싱글침대가 4개인 방 <b>1개</b> 잡기</p></li>
+      <li><span class="n">3</span><p>2층 침대가 2개 있는 방 <b>1개</b> 잡기</p></li>
+    </ul>
+    <div class="note">★ 위 중에서 고르기! 또 다른 의견이 있다면 추가로 제안해줘도 좋음! ★</div>
+    <div class="mine"><small>이민지 의견</small><p>1번 희망! 인원수가 4명이라 캐리어 부피 차지도 무시하지 못할 것 같고, 화장실도 붐빌 거 같아서 침대가 2개 있는 방 2개 잡기를 원함!</p></div>
+  </section>
+</div>
+<script>
+var tabs=document.querySelectorAll('.tab'),panels=document.querySelectorAll('.panel');
+tabs.forEach(function(b){b.addEventListener('click',function(){
+  tabs.forEach(function(x){x.setAttribute('aria-selected',x===b?'true':'false')});
+  panels.forEach(function(p){p.classList.toggle('on',p.id===b.dataset.t)});
+  window.scrollTo({top:0});
+})});
+</script>
+</body>
+</html>
